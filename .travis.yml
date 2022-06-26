@@ -1,0 +1,11 @@
+
+sudo: required
+language: generic
+services:
+  - docker
+
+before_install:
+  - docker build -t andyjc111/frontendx-travis -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true andyjc111/frontendx-travis npm run test -- --coverage
