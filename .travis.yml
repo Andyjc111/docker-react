@@ -19,5 +19,5 @@ deploy:
   bucket_path: "frontendx-travis-docker"
     on:
     branch: "master"
-  access_key_id: "$aws_bean_access_key"
-  secret_acess_key: "$aws_bean_access_secret_key"
+  access_key_id: $aws_bean_access_key
+  secret_acess_key: $aws_bean_access_secret_key
